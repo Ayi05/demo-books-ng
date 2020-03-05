@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "demo-books"
+  "defaultProject": "demo-books",
+  "cli": {
+    "analytics": false
+  }
 }
