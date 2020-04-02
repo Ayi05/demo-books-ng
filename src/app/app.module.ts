@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'demo-books'),
     AngularFirestoreModule, // Only required for database features
     AngularFireAuthModule, // Only required for auth features,
