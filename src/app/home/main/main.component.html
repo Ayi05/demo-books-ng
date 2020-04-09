@@ -1,12 +1,13 @@
 <mat-tab-group mat-align-tabs="center">
     <mat-tab label="Toutes les Catégories">
         <!-- <app-all></app-all> -->
-        Contenu de Toutes les Catégories
-        <!-- <ul>
-            <li *ngFor="let book of books | async">
-                <pre>{{ book | json }}</pre>
+        <ul class="row">
+            <li *ngFor="let image of images">
+                <div class="card">
+                    <img [src]="image" class="">
+                </div>
             </li>
-        </ul> -->
+        </ul>
     </mat-tab>
 
     <mat-tab label="Gestion de Contenu (CMS)">
