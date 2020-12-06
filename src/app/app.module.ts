@@ -15,11 +15,11 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { MatTabsModule } from '@angular/material/tabs';
 
 //  Firebase
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { environment } from '../environments/environment';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFirestoreModule } from '@angular/fire/firestore';
+// import { AngularFireStorageModule } from '@angular/fire/storage';
+// import { AngularFireAuthModule } from '@angular/fire/auth';
+// import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -36,10 +36,10 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     MatTabsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig, 'demo-books'),
-    AngularFirestoreModule, // Only required for database features
-    AngularFireAuthModule, // Only required for auth features,
-    AngularFireStorageModule // Only required for storage features
+    // AngularFireModule.initializeApp(environment.firebaseConfig, 'demo-books'),
+    // AngularFirestoreModule, // Only required for database features
+    // AngularFireAuthModule, // Only required for auth features,
+    // AngularFireStorageModule // Only required for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]
